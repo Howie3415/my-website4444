@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>召唤神龙</title>
+    <title>召唤胡某养的野神龙</title>
 
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
@@ -72,7 +72,7 @@
 
 <div id="adContainer" style="display:none;position: absolute;top:0px;left: 0px;width:100%;height:100%;z-index:999;"></div>
 <div id="loadingText" style="width:100%;display: none;text-align:center;position:absolute;top:45%;z-index:2;font-size:20px;color:#f99f0a">
-    loading......0%
+    胡某找龙中......0%
 </div>
 
 <div id="splash">
@@ -82,7 +82,7 @@
 </div>
 
 <div id="loadingImg" style="top:45%;width: 100%;position:absolute; ">
-    <img src="res/loading.gif" width="7%" height="7%" />
+    <img src="res/loading.gif" width="100%" height="100%" />
 </div>
 
 <!-- 判断浏览器是否屏蔽广告 -->
@@ -119,19 +119,19 @@
         //        console.log("window.navigator.language",window.navigator.language);
 
         if (window.navigator.language == "zh-CN" || window.navigator.language == "zh-cn") {
-            document.title = "召唤神龙";
+            document.title = "召唤胡某养的野神龙";
         } else if (window.navigator.language == "zh-TW") {
-            document.title = "召喚神龍";
+            document.title = "召唤胡某养的野神龙";
         } else if (window.navigator.language == "zh-HK") {
-            document.title = "召喚神龍";
+            document.title = "召唤胡某养的野神龙";
         } else if (window.navigator.language == "ko-KR") {
-            document.title = "신용 소환";
+            document.title = "召唤胡某养的野神龙";
         } else if (window.navigator.language == "ja-JP") {
-            document.title = "神竜を召喚する";
+            document.title = "召唤胡某养的野神龙";
         } else if (window.navigator.language == "th-TH") {
-            document.title = "เรียกมังกร";
+            document.title = "召唤胡某养的野神龙";
         } else {
-            document.title = "Summon the Dragon";
+            document.title = "召唤胡某养的野神龙";
         }
     }
 
@@ -172,7 +172,7 @@
                 return;
             }
 
-            loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%';
+            loadintT.innerHTML = '胡某找龙中......' + parseInt(tempSeconds) + '%';
 
             switch (tempSeconds) {
                 case 20:
@@ -205,7 +205,7 @@
             if (tempSeconds > 100) {
                 clearInterval(timer);
                 tempSeconds = 100
-                loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%';
+                loadintT.innerHTML = '胡某找龙中......' + parseInt(tempSeconds) + '%';
             }
         }, t * 1000);
     }
@@ -219,7 +219,7 @@
 
     function finishLoad() {
         clearInterval(timer);
-        loadintT.innerHTML = 'loading......100' + '%';
+        loadintT.innerHTML = '胡某找龙中......100' + '%';
         setTimeout(function() {
             loadintT.remove();
         }, 0.1 * 1000);
